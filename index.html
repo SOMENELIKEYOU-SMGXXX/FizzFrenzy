@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FizzFrenzy</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- My Style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Fizz<span>Frenzy</span>.</a>
+   
+    <div class="navbar-nav">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#menu">Menu</a>
+      <a href="#products">Produk</a>
+      <a href="#contact">Kontak</a>
+    </div>
+
+    <div class="navbar-extra">
+      <a href="#" id="search-button"><i data-feather="search"></i></a>
+      <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+
+    <!-- Search Form start -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="search here...">
+      <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+    <!-- Search Form end -->
+
+    <!-- Shopping Cart start -->
+    <div class="shopping-cart">
+      <div class="cart-notification" style="display: none;">Item added to cart!</div>
+      <div class="cart-items">
+        <!-- Cart items will be added here dynamically -->
+      </div>
+      <div class="cart-summary">
+        <span class="total-items">Total Items: 0</span>
+        <span class="total-price">Total Price: IDR 0K</span>
+      </div>
+    </div>
+    <!-- Shopping Cart end -->
+
+  </nav>
+  <!-- Navbar end -->
+
+  <!-- Hero Section start -->
+  <section class="hero" id="home">
+    <div class="mask-container">
+      <main class="content">
+        <h1>Mari <span>Nikmati Minuman Segar</span></h1>
+        <p>FizzFrenzy offers refreshing, unique, and flavorful drinks with a fun, fizzy twist for everyone to enjoy.</p>
+        <a href="#menu" class="btn-order">Order Sekarang</a>
+      </main>
+    </div>
+  </section>
+  <!-- Hero Section end -->
+
+  <!-- About Section start -->
+  <section id="about" class="about">
+    <h2><span>Tentang</span> Kami</h2>
+
+    <div class="row">
+      <div class="about-img">
+        <img src="img/tentang-kami.jpg" alt="Tentang Kami">
+      </div>
+      <div class="content">
+        <h3>Kenapa memilih produk kami?</h3>
+        <p>FizzFrenzy offers high-quality, refreshing drinks with unique flavors and a delightful fizz.</p>
+        <p>Our beverages are crafted from premium ingredients, ensuring great taste and satisfaction in every sip.</p>
+      </div>
+    </div>
+  </section>
+  <!-- About Section end -->
+
+  <!-- Menu Section start -->
+  <section id="menu" class="menu">
+    <h2><span>Menu</span> Kami</h2>
+    <p>Dibagian ini gw bikin ulang anjing.</p>
+
+    <div class="row" id="menu-items">
+      <div class="menu-card">
+        <img src="img/menu/1.jpg" alt="Es Teh" class="menu-card-img">
+        <h3 class="menu-card-title">- Es Teh -</h3>
+        <p class="menu-card-price">IDR 5K</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/menu/1.jpg" alt="Es Jeruk" class="menu-card-img">
+        <h3 class="menu-card-title">- Es Jeruk -</h3>
+        <p class="menu-card-price">IDR 5K</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/menu/1.jpg" alt="Latte" class="menu-card-img">
+        <h3 class="menu-card-title">- Latte -</h3>
+        <p class="menu-card-price">IDR 20K</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/menu/1.jpg" alt="Espresso" class="menu-card-img">
+        <h3 class="menu-card-title">- Espresso -</h3>
+        <p class="menu-card-price">IDR 15K</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/menu/1.jpg" alt="Jus Stroberi" class="menu-card-img">
+        <h3 class="menu-card-title">- Jus Stroberi -</h3>
+        <p class="menu-card-price">IDR 10K</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/menu/1.jpg" alt="Jus Alpukat" class="menu-card-img">
+        <h3 class="menu-card-title">- Jus Alpukat -</h3>
+        <p class="menu-card-price">IDR 12K</p>
+      </div>
+    </div>
+  </section>
+  <!-- Menu Section end -->
+
+  <!-- Products Section start -->
+  <section class="products" id="products">
+    <h2><span>Produk Unggulan</span> Kami</h2>
+    <p>Our top juice products offer fresh ingredients, vibrant flavors, rich nutrients, and a refreshing taste for a healthier lifestyle.</p>
+
+    <div class="row">
+      <div class="product-card">
+        <div class="product-icons">
+          <a href="#" class="item-detail-button"><i data-feather="shopping-cart"></i></a>
+          <a href="#"><i data-feather="eye"></i></a>
+        </div>
+        <div class="product-image">
+          <img src="img/products/1.jpg" alt="Product 1">
+        </div>
+        <div class="product-content">
+          <h3>Coffee Beans 1</h3>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-icons">
+          <a href="#" class="item-detail-button"><i data-feather="shopping-cart"></i></a>
+          <a href="#"><i data-feather="eye"></i></a>
+        </div>
+        <div class="product-image">
+          <img src="img/products/1.jpg" alt="Product 1">
+        </div>
+        <div class="product-content">
+          <h3>Coffee Beans 1</h3>
+          <div class="product-stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-icons">
+          <a href="#" class="item-detail-button"><i data-feather="shopping-cart"></i></a>
+          <a href="#"><i data-feather="eye"></i></a>
+        </div>
+        <div class="product-image">
+          <img src="img/products/1.jpg" alt="Product 1">
+        </div>
+        <div class="product-content">
+          <h3>Coffee Beans 1</h3>
+          <div class="product-stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Products Section end -->
+
+  <!-- Contact Section start -->
+  <section id="contact" class="contact">
+    <h2><span>Kontak</span> Kami</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, provident.
+    </p>
+
+    <div class="row">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.56347862248!2d107.57311709235512!3d-6.903444341687889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Bandung%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1672408575523!5m2!1sen!2sid"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+      <form action="">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" placeholder="nama">
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="text" placeholder="email">
+        </div>
+        <div class="input-group">
+          <i data-feather="phone"></i>
+          <input type="text" placeholder="no hp">
+        </div>
+        <button type="submit" class="btn">kirim pesan</button>
+      </form>
+
+    </div>
+  </section>
+  <!-- Contact Section end -->
+
+  <!-- Footer start -->
+  <footer>
+    <div class="socials">
+      <a href="#"><i data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="github"></i></a>
+      <a href="#"><i data-feather="facebook"></i></a>
+    </div>
+
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Kontak</a>
+    </div>
+
+    <div class="credit">
+      <p>Created by <a href="">Muhammad Agustian Bintang Mars</a>. | &copy; 2025.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <!-- Modal Box Item Detail start -->
+  <div class="modal" id="item-detail-modal">
+    <div class="modal-container">
+      <a href="#" class="close-icon"><i data-feather="x"></i></a>
+      <div class="modal-content">
+        <img src="img/products/1.jpg" alt="Product 1">
+        <div class="product-content">
+          <h3>Product 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, tenetur cupiditate facilis obcaecati
+            ullam maiores minima quos perspiciatis similique itaque, esse rerum eius repellendus voluptatibus!</p>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+          <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Box Item Detail end -->
+
+  <!-- Feather Icons -->
+  <script>
+    feather.replace()
+  </script>
+
+  <!-- My Javascript -->
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchButton = document.getElementById('search-button');
+      const shoppingCartButton = document.getElementById('shopping-cart-button');
+      const searchForm = document.querySelector('.search-form');
+      const shoppingCart = document.querySelector('.shopping-cart');
+      const cartNotification = document.querySelector('.cart-notification');
+      const cartItemsContainer = document.querySelector('.cart-items');
+      const addToCartButtons = document.querySelectorAll('.item-detail-button');
+      const totalItems = document.querySelector('.total-items');
+      const totalPrice = document.querySelector('.total-price');
+      const searchBox = document.getElementById('search-box');
+      const menuItems = document.getElementById('menu-items').children;
+
+      function updateCartSummary() {
+        const cartItems = cartItemsContainer.querySelectorAll('.cart-item');
+        const itemCount = cartItems.length;
+        let priceTotal = 0;
+
+        cartItems.forEach(item => {
+          const priceText = item.querySelector('.item-price').textContent;
+          const price = parseInt(priceText.replace('IDR', '').replace('K', '')) * 1000;
+          priceTotal += price;
+        });
+
+        totalItems.textContent = `Total Items: ${itemCount}`;
+        totalPrice.textContent = `Total Price: IDR ${priceTotal / 1000}K`;
+
+        if (itemCount === 0) {
+          shoppingCart.style.display = 'none';
+        } else {
+          shoppingCart.style.display = 'block';
+        }
+      }
+
+      function toggleVisibility(element) {
+        if (element.classList.contains('active')) {
+          element.classList.remove('active');
+          element.classList.add('inactive');
+          setTimeout(() => {
+            element.classList.remove('inactive');
+            element.style.display = 'none';
+          }, 300);
+        } else {
+          element.style.display = 'block';
+          setTimeout(() => {
+            element.classList.add('active');
+          }, 10);
+        }
+      }
+
+      function showNotification(message) {
+        cartNotification.textContent = message;
+        cartNotification.style.display = 'block';
+        setTimeout(() => {
+          cartNotification.style.display = 'none';
+        }, 2000);
+      }
+
+      searchButton.addEventListener('click', function(event) {
+        event.stopPropagation();
+        toggleVisibility(searchForm);
+        shoppingCart.classList.remove('active');
+      });
+
+      shoppingCartButton.addEventListener('click', function(event) {
+        event.stopPropagation();
+        toggleVisibility(shoppingCart);
+        searchForm.classList.remove('active');
+      });
+
+      document.addEventListener('click', function(event) {
+        if (!searchForm.contains(event.target) && !searchButton.contains(event.target)) {
+          searchForm.classList.remove('active');
+          searchForm.style.display = 'none';
+        }
+        if (!shoppingCart.contains(event.target) && !shoppingCartButton.contains(event.target)) {
+            shoppingCart.classList.remove('active');
+          shoppingCart.style.display = 'none';
+        }
+      });
+
+      addToCartButtons.forEach(button => {
+        button.addEventListener('click', function(event) {
+          event.preventDefault();
+          const productCard = button.closest('.product-card');
+          const productImage = productCard.querySelector('.product-image img').src;
+          const productName = productCard.querySelector('.product-content h3').textContent;
+          const productPrice = productCard.querySelector('.product-price').childNodes[0].textContent.trim();
+
+          const cartItem = document.createElement('div');
+          cartItem.classList.add('cart-item');
+          cartItem.innerHTML = `
+            <img src="${productImage}" alt="${productName}">
+            <div class="item-detail">
+              <h3>${productName}</h3>
+              <div class="item-price">${productPrice}</div>
+            </div>
+            <i data-feather="trash-2" class="remove-item"></i>
+          `;
+          cartItemsContainer.appendChild(cartItem);
+          feather.replace();
+
+          cartItem.querySelector('.remove-item').addEventListener('click', function() {
+            cartItem.remove();
+            updateCartSummary();
+          });
+
+          showNotification('Item added to cart!');
+          updateCartSummary();
+        });
+      });
+
+      searchForm.addEventListener('click', function(event) {
+        event.stopPropagation();
+      });
+
+      shoppingCart.addEventListener('click', function(event) {
+        event.stopPropagation();
+      });
+
+      searchBox.addEventListener('input', function() {
+        const searchTerm = searchBox.value.toLowerCase();
+        Array.from(menuItems).forEach(item => {
+          const title = item.querySelector('.menu-card-title').textContent.toLowerCase();
+          if (title.includes(searchTerm)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+
+      updateCartSummary();
+    });
+  </script>
+</body>
+
+</html>
